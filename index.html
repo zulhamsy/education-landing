@@ -1,10 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourseConnect - Master UI/UX Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ['Inter', 'sans-serif'],
+              }
+            }
+          }
+        }
+    </script>
 </head>
-<body>
-$END$
+<body class="bg-slate-50 font-sans">
+    <div class="container mx-auto max-w-6xl my-12 p-4">
+        <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+            <!--      Header      -->
+            <header class="flex justify-between items-center pb-12">
+                <div class="flex items-center gap-3">
+                    <svg class="h-8 w-8 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-1.718-.984-3.24-2.435-4.012a9.738 9.738 0 0 0-4.62 0c-1.451.772-2.435 2.294-2.435 4.012v3.723c0 1.718.984 3.24 2.435 4.012a9.738 9.738 0 0 0 4.62 0c1.451-.772 2.435-2.294 2.435-4.012v-3.723Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 11.25v6.75m-1.5-6.75v6.75m3-6.75v6.75m3-6.75v6.75m-1.5-6.75v6.75M15 9.75v4.5" />
+                    </svg>
+                    <span class="text-2xl font-bold text-slate-800">CourseConnect</span>
+                </div>
+                <div>
+                    <img src="assets/photo.jpg" class="h-12 w-12 rounded-full object-cover" />
+                </div>
+            </header>
+            <hr class="border-slate-100" />
+            <!--     Hero Section       -->
+            <section class="py-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-extrabold text-slate-800 leading-tight">Master UI/UX Design in 12 Weeks</h1>
+                        <p class="mt-4 text-lg text-slate-600 max-w-[50ch]">A comprehensive online course for beginners and aspiring designers. Go from zero to portofolio-ready professional with hands-on projects and expert mentorship.</p>
+                        <a href="#enroll-form" class="mt-8 inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg cursor-pointer hover:bg-indigo-700 transition-colors duration-200">Enroll Now &rarr;</a>
+                    </div>
+                    <div>
+                        <img src="assets/ux-hero-image.jpg" class="rounded-xl shadow-lg w-full h-auto object-cover" />
+                    </div>
+                </div>
+            </section>
+            <hr class="border-slate-100" />
+            <!--      Curriculum Section      -->
+            <section class="py-12">
+                <h2 class="text-3xl font-bold text-slate-700 mb-8">What You'll Learn</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <ul class="space-y-4 text-slate-600">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-indigo-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                            <span>
+                                <strong class="text-slate-700">Fundamentals of User-Centered Design:</strong> Place users at the heart of your design process.
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-indigo-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                            <span>
+                                <strong class="text-slate-700">Wireframing & Prototyping:</strong> Turns ideas into tangible, interactive desings.
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-indigo-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                            <span>
+                                <strong class="text-slate-700">Building Designs Systems in Figma:</strong> Create reusable components for consistency and efficiency.
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-indigo-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                            <span>
+                                <strong class="text-slate-700">Crafting a Compelling UX Portofolio:</strong> Showcase your work to attract employers.
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead class="bg-slate-50">
+                                <tr>
+                                    <th class="p-4 text-sm font-semibold text-slate-600 border border-slate-200">Module</th>
+                                    <th class="p-4 text-sm font-semibold text-slate-600 border border-slate-200">Topic</th>
+                                    <th class="p-4 text-sm font-semibold text-slate-600 border border-slate-200">Duration</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="hover:bg-slate-50">
+                                    <td class="p-4 border border-slate-200">1</td>
+                                    <td class="p-4 border border-slate-200">Intro to UX Principles</td>
+                                    <td class="p-4 border border-slate-200">1 Week</td>
+                                </tr>
+                                <tr class="hover:bg-slate-50">
+                                    <td class="p-4 border border-slate-200">2</td>
+                                    <td class="p-4 border border-slate-200">User Research and Personas</td>
+                                    <td class="p-4 border border-slate-200">2 Week</td>
+                                </tr>
+                                <tr class="hover:bg-slate-50">
+                                    <td class="p-4 border border-slate-200">3</td>
+                                    <td class="p-4 border border-slate-200">Wireframing & Prototyping</td>
+                                    <td class="p-4 border border-slate-200">3 Week</td>
+                                </tr>
+                                <tr class="hover:bg-slate-50">
+                                    <td class="p-4 border border-slate-200">4</td>
+                                    <td class="p-4 border border-slate-200">Visual Designs and UI Kits</td>
+                                    <td class="p-4 border border-slate-200">3 Week</td>
+                                </tr>
+                                <tr class="hover:bg-slate-50">
+                                    <td class="p-4 border border-slate-200">5</td>
+                                    <td class="p-4 border border-slate-200">Project</td>
+                                    <td class="p-4 border border-slate-200">3 Week</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <hr class="border-slate-100" />
+            <!--      Video/Audio/Form Section      -->
+            <section class="py-12">
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
+                    <div class="lg:col-span-3">
+                    <h2 class="text-3xl font-bold text-slate-700 mb-8">Get a Sneak Peak</h2>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gG4urkinFQI?si=P5mYI6ZaAwChwwkS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="mt-8">
+                            <p class="text-sm font-semibold text-slate-700 mb-2">🎧 Welcome Message from Zulham S</p>
+                            <audio class="w-full" src="assets/welcome-traveler-97167.mp3" controls>
+                            </audio>
+                        </div>
+                    </div>
+                    <!--        Form            -->
+                    <div class="lg:col-span-2" id="enroll-form">
+                        <div class="bg-slate-50 p-8 rounded-xl border border-slate-200">
+                            <h2 class="text-3xl font-bold text-slate-700 mb-8">Start Your Journey!</h2>
+                            <form class="space-y-6" id="application-form">
+                                <div>
+                                    <label for="full-name" class="text-sm font-medium text-slate-700">Full Name</label>
+                                    <input type="text" name="full-name" id="full-name" class="mt-1 block w-full rounded-md border-slate-300 border shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm h-10 px-3" required placeholder="Zulham Syafrawi" />
+                                </div>
+                                <div>
+                                    <label for="email" class="text-sm font-medium text-slate-700">Email</label>
+                                    <input type="email"  name="email" id="email" class="mt-1 block w-full rounded-md border-slate-300 border shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm h-10 px-3" required placeholder="zulham.sy@gmail.com" />
+                                </div>
+                                <button class="inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg cursor-pointer hover:bg-indigo-700 transition-colors duration-200 w-full lg:w-auto">Submit Application</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+<!--  Modal Saat Click Submit Application  -->
+    <div id="success-modal" class="hidden fixed inset-0 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-4 z-50">
+        <div class="bg-white w-full max-w-md mx-auto rounded-2xl shadow-xl p-8 text-center">
+            <h3 class="text-2xl font-bold text-slate-800">Application Received!</h3>
+            <div class="mt-2 px-3 py-3">
+                <p class="text-lg text-slate-600">
+                    Thanks for your interest, <strong id="user-name" class="text-indigo-600">friend</strong>! We'll be in touch soon
+                </p>
+                <button id="close-modal-btn" class="inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg cursor-pointer hover:bg-indigo-700 transition-colors duration-200 w-full mt-6">Got it, Thanks!</button>
+            </div>
+        </div>
+    </div>
+<script>
+    const applicationForm = document.getElementById('application-form')
+    const fullNameInput = document.getElementById('full-name')
+    // modal
+    const modal = document.getElementById('success-modal')
+    const closeModal = document.getElementById('close-modal-btn')
+    const username = document.getElementById('user-name')
+
+    applicationForm.addEventListener('submit', (event) => {
+      event.preventDefault()
+      username.textContent = fullNameInput.value.trim() || 'friend'
+      modal.classList.remove('hidden')
+    })
+
+    closeModal.addEventListener('click', () => {
+      modal.classList.add('hidden')
+    })
+</script>
 </body>
 </html>
